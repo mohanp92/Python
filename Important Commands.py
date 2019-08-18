@@ -31,7 +31,11 @@ use astype titanic["Fare"] = titanic.Fare.astype("float")
  we will get the only missing value rows and columns
   titanic.loc[titanic.isna().any(axis=1)]
  ------------------------------------------------------------
-                                                          
+  whenever you want to find out the relation between the two variable then make another data frame
+  of those perticular column so that the original df won't affectet make sure that this should be a data frame 
+  data=pd.concat([df.SalePrice, df.GrLivArea],axis=1)
+	--------------------------------------------------------------------------------------------------------
+	
                                                           
                                                           
                                                           
